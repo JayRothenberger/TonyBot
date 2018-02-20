@@ -1,0 +1,20 @@
+var file = "./tony's_notebook.txt";
+var notebook = new File(file);
+var tagR = RegExp('[A-Za-z]*(-|#)[0-9]*');
+var discR = RegExp('[A-Za-z]*;[0-9]*');
+
+
+TonyPen.write = function(s){
+    
+    notebook.open("a");
+    file.writeln(s);
+    notebook.close();
+}
+
+TonyPen.findTag = function(disc){
+    
+    notebook.open("r");
+    //find the battletag of a perso from their discord id.
+    
+    
+}
